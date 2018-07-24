@@ -50,9 +50,68 @@ var mark = new google.maps.Marker({
 
 ### Google 地图 - 添加折线
 
+Polyline对象
 
+```
+var myTrip = [1,2,3];  //1,2,3 设置过经纬度
 
+var flightPath = new google.maps.Polyline({
+    path:myTrip,
+    strokeColor:'#0000FF',
+    strokeOpacity:0.8,
+    strokeWeight:2,
+    editable:true/false,
+});
 
+flightPath.setMap(map);
+```
+
+### Google 地图 - 多边形
+
+Polygon对象
+
+```
+var myTrip = [1,2,3,1];
+
+var flightPath = new google.maps.Polygon({
+      path:myTrip,
+      strokeColor:"#0000FF",
+      strokeOpacity:0.8,
+      strokeWeight:2,
+      fillColor:"#0000FF",
+      fillOpacity:0.4
+});
+
+flightPath.setMap(map);
+```
+
+### Google 地图 - 圆
+
+Circle对象
+
+```
+var myCity = new google.maps.Circle({
+  center:amsterdam,  //圆中心参数
+  radius:20000,      //半径,米
+  strokeColor:"#0000FF",
+  strokeOpacity:0.8,
+  strokeWeight:2,
+  fillColor:"#0000FF",
+  fillOpacity:0.4
+});
+
+myCity.setMap(map);
+```
+
+### Google 地图 - 信息窗口
+
+```
+var infowindow = new google.maps.InfoWindow({
+    content:"Hello World!"
+});
+
+infowindow.open(map,marker);
+```
 
 
 
