@@ -23,6 +23,27 @@ google.maps.event.addListener(marker,'click',function(){
 });
 ```
 
+点击地图上的点后调用其他函数
+
+```
+function initialize(){
+    google.maps.event.addListener(map,'click',function(event){
+        placeMarker(event.latLng);
+    });
+}
+
+function placeMarker(location){
+    var marker = new google.maps.Marker({
+        position:location,
+        map:map,
+    });
+    var infowindow = new google.maps.InfoWindow({
+        content="经度:"+location.lat()+"纬度"+location.lng();
+    });
+    infowindow.open(map,marker);
+}    
+```
+
 ### change事件
 
 中心点改变后触发
