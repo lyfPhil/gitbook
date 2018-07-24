@@ -1,5 +1,5 @@
 1. 声明HTML    &lt;!DOCTYPE html&gt;
-2. 添加API key   &lt;script src="[http://maps.googleapis.com/maps/api/js?key=YOUR\_API\_KEY&sensor=TRUE\_OR\_FALSE"&gt;&lt;/script&gt](http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=TRUE_OR_FALSE"></script&gt);
+2. 添加API key   &lt;script src="http://maps.googleapis.com/maps/api/js?key=YOUR\_API\_KEY&sensor=TRUE\_OR\_FALSE"&gt;&lt;/script&gt;;
 3. 定义地图属性  center\(中心点\)  zoom \(缩放级数\)  mapTypeId\(地图初始类型\)
 4. 地图显示位置  &lt;div id="googleMap"&gt;&lt;/div&gt;
 5. 实例化Map类 var map = new google.maps.Map\(\)
