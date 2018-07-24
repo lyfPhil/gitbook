@@ -105,6 +105,8 @@ myCity.setMap(map);
 
 ### Google 地图 - 信息窗口
 
+在一个标记上显示一个文本信息窗口：
+
 ```
 var infowindow = new google.maps.InfoWindow({
     content:"Hello World!"
