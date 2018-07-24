@@ -23,7 +23,7 @@ google.maps.event.addListener(marker,'click',function(){
 });
 ```
 
-点击地图上的点后调用其他函数
+点击地图上的点后调用其他函数,显示点的位置信息
 
 ```
 function initialize(){
@@ -41,7 +41,7 @@ function placeMarker(location){
         content="经度:"+location.lat()+"纬度"+location.lng();
     });
     infowindow.open(map,marker);
-}    
+}
 ```
 
 ### change事件
