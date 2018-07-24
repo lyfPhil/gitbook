@@ -1,6 +1,6 @@
 1. 声明HTML    &lt;!DOCTYPE html&gt;
 
-2. 添加API key   
+2. 添加API key
 
 3. 定义地图属性  center\(中心点\)  zoom \(缩放级数\)  mapTypeId\(地图初始类型\)
 
