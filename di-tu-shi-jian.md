@@ -29,9 +29,9 @@ google.maps.event.addListener(marker,'click',function(){
 
 ```
 google.maps.event.addListener(map,'center_changed',function() {
-  window.setTimeout(function() {
-    map.panTo(marker.getPosition());
-  },3000);
+    window.setTimeout(function() {
+        map.panTo(marker.getPosition());
+    },3000);
 });
 ```
 
